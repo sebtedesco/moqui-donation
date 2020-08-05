@@ -1,0 +1,17 @@
+<services>
+    <service verb="create" noun="CreditCard">
+        <in-parameters>
+            <parameter name="creditCardTypeEnumId" required="true"/>
+            <parameter name="cardNumber" required="true"/>
+            <parameter name="cardSecurityCode" required="true"/>
+            <parameter name="expireDate" required="true"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="paymentMethodId"/>
+        </out-parameters>
+        <actions>
+            <service-call name="create#mantle.account.method.CreditCard" in-map="context + [partyTypeEnumId:'PtyPerson']" out-map="context"/>
+        </actions>
+    </service>
+</services>
+

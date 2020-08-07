@@ -46,7 +46,7 @@
             <set field="paymentGatewayConfigId" value="AuthorizeDotNetCimDemo"/>
 
             <service-call name="AuthorizeDotNet.CimPaymentServices.authorize#Payment" in-map="context" out-map="context"/>
-<!--            <service-call name="AuthorizeDotNet.CimPaymentServices.capture#Payment" in-map="context" out-map="context"/>-->
+            <service-call name="AuthorizeDotNet.CimPaymentServices.capture#Payment" in-map="context" out-map="context"/>
         </actions>
     </service>
 

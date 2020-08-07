@@ -120,7 +120,7 @@
                     <text-line size="30"/>
                 </default-field>
             </field>
-            <field name="creditCard">
+            <field name="cardNumber">
                 <default-field title="Card Number">
                     <text-line size="30"/>
                 </default-field>

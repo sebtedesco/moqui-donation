@@ -25,7 +25,6 @@
 
         <out-parameters>
             <parameter name="partyId"/>
-<!--            <auto-parameters entity-name="mantle.account.PaymentServices.create#Payment" include="all"/>-->
         </out-parameters>
 
         <actions>
@@ -33,7 +32,6 @@
             <service-call name="mantle.party.PartyServices.create#Person" in-map="context" out-map="context"/>
             <service-call name="mantle.party.ContactServices.store#PartyContactInfo" in-map="context" out-map="context"/>
 
-<!--        <set field="paymentMethodId" value="Johnny"/>-->
 
             <service-call name="mantle.account.PaymentMethodServices.create#CreditCard" in-map="context" out-map="context"/>
 
@@ -51,3 +49,4 @@
     </service>
 
 </services>
+
